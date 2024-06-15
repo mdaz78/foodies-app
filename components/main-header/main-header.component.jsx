@@ -13,13 +13,7 @@ export default function MainHeader() {
       <MainHeaderBackground />
       <header className={styles.header}>
         <Link href={'/'} className={styles.logo}>
-          <Image
-            src={logo}
-            alt='Food on a plate'
-            width={100}
-            height={100}
-            priority
-          />
+          <Image src={logo} alt='Food on a plate' priority />
           <h1>Foodies</h1>
         </Link>
 
