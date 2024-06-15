@@ -1,8 +1,8 @@
 const NotFoundPage = ({ title, message }) => {
   return (
     <main className='not-found'>
-      <h1>Not found</h1>
-      <p>Unfortunately, we could not find the requested page or resource.</p>
+      <h1>{title}</h1>
+      <p>{message}</p>
     </main>
   );
 };
