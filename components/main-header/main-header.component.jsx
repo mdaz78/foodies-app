@@ -4,7 +4,8 @@ import Link from 'next/link';
 import styles from './main-header.module.css';
 
 import logo from '@/assets/logo.png';
-import MainHeaderBackground from '../main-header-background/main-header-background.component';
+import MainHeaderBackground from './main-header-background/main-header-background.component';
+import NavLink from './nav-link/nav-link.component';
 
 export default function MainHeader() {
   return (
@@ -25,10 +26,10 @@ export default function MainHeader() {
         <nav className={styles.nav}>
           <ul>
             <li>
-              <Link href='/meals'>Browse Meals</Link>
+              <NavLink href='/meals'>Browse Meals</NavLink>
             </li>
             <li>
-              <Link href='/community'>Foodies Community</Link>
+              <NavLink href='/community'>Community</NavLink>
             </li>
           </ul>
         </nav>
