@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import style from "./main-header.module.css";
+import styles from "./main-header.module.css";
 
 import logo from "@/assets/logo.png";
 import MainHeaderBackground from "../main-header-background/main-header-background.component";
@@ -10,8 +10,8 @@ export default function MainHeader() {
   return (
     <>
       <MainHeaderBackground />
-      <header className={style.header}>
-        <Link href={"/"} className={style.logo}>
+      <header className={styles.header}>
+        <Link href={"/"} className={styles.logo}>
           <Image
             src={logo}
             alt="Food on a plate"
@@ -19,10 +19,10 @@ export default function MainHeader() {
             height={100}
             priority
           />
-          <p>Foodies</p>
+          <h1>Foodies</h1>
         </Link>
 
-        <nav className={style.nav}>
+        <nav className={styles.nav}>
           <ul>
             <li>
               <Link href="/meals">Browse Meals</Link>
